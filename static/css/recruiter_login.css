@@ -1,0 +1,130 @@
+/* Import a premium Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #74EBD5, #9FACE6);
+    height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 35px;
+
+}
+
+/* Main container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Login container with improved glassmorphism */
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 45px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 380px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    transition: 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    transform: scale(1.02);
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input fields with soft glowing effect */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+/* Input glow on focus */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Divider */
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+}
+
+/* Buttons with enhanced animations */
+.form-group-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    background: linear-gradient(90deg, #4A90E2, #007bff);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    flex: 1;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(90deg, #007bff, #003d82);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.6);
+}
+
+/* Footer text */
+p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
